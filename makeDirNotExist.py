@@ -3,5 +3,5 @@
 
 import os
 def makeDirNotExist(nm):
-	if os.path.isdir(nm)
+	if not os.path.isdir(nm):
 		os.mkdir(nm)
