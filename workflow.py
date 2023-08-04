@@ -13,4 +13,8 @@ os.environ['PATH'] += r'C:\Program Files\Git\bin;'
 
 subprocess.run(['git','clone','"https://github.com/Zzajang-bro/python-codebucket"'], capture_output=True)
 os.chdir('python-codebucket')
-subprocess.run(['git','remote','add','origin','""'], capture_output=True)
+subprocess.run(['git','remote','add','origin','"https://github.com/Zzajang-bro/python-codebucket"'], capture_output=True)
+subprocess.run(['git','push','-u','origin','main'], capture_output=True)
+subprocess.run(['git','add','.'], capture_output=True)
+subprocess.run(['git','commit','-m','"update"'], capture_output=True)
+subprocess.run(['git','push'], capture_output=True)
